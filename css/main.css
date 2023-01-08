@@ -122,27 +122,226 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* END OF CSS RESET */
 body {
-  background-color: grey;
-  padding: 0px !important;
-  margin: 0px !important;
-  box-sizing: border-box; }
-  body .wrapper {
-    background-color: yellow;
-    margin: auto;
-    max-width: 1200px; }
-    body .wrapper .navbar {
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-      display: flex; }
-      body .wrapper .navbar__logo {
-        font-size: 20px; }
-      body .wrapper .navbar__sec {
-        display: inline-flex; }
-      body .wrapper .navbar__btn {
-        border-radius: 30%;
-        font-size: 20px;
-        background-color: red; }
+  font-size: 16px;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fffafa; }
+
+h1 {
+  font-size: 4rem;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.6); }
+
+h2 {
+  font-size: 3rem;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.6); }
+
+h3 {
+  font-size: 2rem;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.6); }
+
+button {
+  background-color: #e24548;
+  color: #fffafa;
+  font-size: 1rem;
+  padding: 10px 5px 10px 5px;
+  border-radius: 130px;
+  border: 1px solid red; }
+
+header {
+  height: 80vh;
+  position: relative;
+  width: 100%; }
+  header nav {
+    position: absolute;
+    top: 0;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 5rem;
+    width: 100%;
+    color: #454545;
+    background-color: #fffafa; }
+    header nav .logo {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      header nav .logo__icon {
+        font-size: 3rem;
+        width: 100px; }
+    header nav .navLinks {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      header nav .navLinks__li a {
+        font-size: 1rem;
+        color: #454545;
+        text-decoration: none; }
+    header nav .build {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      header nav .build__btn {
+        font-size: .9rem;
+        width: 7rem; }
+  header .landing {
+    background-image: url("https://i.postimg.cc/TYXD6QCZ/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 80vh;
+    position: relative;
+    width: 100%; }
+    header .landing__jumbo {
+      position: relative;
+      height: 80vh;
+      width: 80%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: auto;
+      margin-right: auto; }
+      header .landing__jumbo__textBox {
+        flex: 1;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        color: #fffafa;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+        flex-basis: 40%;
+        max-width: 520px; }
+        header .landing__jumbo__textBox__h2 {
+          font-size: 3.2rem;
+          padding-bottom: 20px;
+          line-height: 1.2;
+          letter-spacing: 3px;
+          font-weight: lighter; }
+        header .landing__jumbo__textBox__p {
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          line-height: 1.3;
+          font-weight: lighter; }
+      header .landing__jumbo__form {
+        flex: 1;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        color: #fffafa;
+        background-color: black;
+        opacity: 50%;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+        flex-basis: 40%;
+        max-width: 520px; }
+        header .landing__jumbo__form__summary {
+          padding: 30px; }
+          header .landing__jumbo__form__summary__line {
+            display: inline-flex;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 10px; }
+            header .landing__jumbo__form__summary__line i {
+              font-size: 2.0rem;
+              line-height: 1.2;
+              letter-spacing: 3px; }
+            header .landing__jumbo__form__summary__line p {
+              font-size: 1.0rem;
+              line-height: 1.2;
+              letter-spacing: 3px;
+              text-align: left;
+              padding-left: 20px; }
+        header .landing__jumbo__form__inputs {
+          width: 80%;
+          padding: 30px; }
+          header .landing__jumbo__form__inputs__enter {
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: #fffafa;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: 0; }
+          header .landing__jumbo__form__inputs__submit {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            width: 100%;
+            background: #CC6666;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+            color: white;
+            font-size: 1rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: all 0.3s;
+            margin-top: -4px; }
+
+footer {
+  background-color: #454545;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 5rem;
+  position: relative;
+  bottom: 0px; }
+  footer nav {
+    position: absolute;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 5rem;
+    width: 100%;
+    background-color: #fffafa;
+    padding: 5px; }
+    footer nav .navLinks {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px; }
+      footer nav .navLinks__li a {
+        font-size: 1rem;
+        color: #c6c6c6;
+        text-decoration: none; }
+    footer nav .copy {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      footer nav .copy__txt {
+        font-size: .7rem;
+        color: #c6c6c6; }
+    footer nav .logo {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      footer nav .logo__icon {
+        font-size: 3rem;
+        width: 100px; }
+
+/* For desktop: */
 
 /*# sourceMappingURL=main.css.map */
