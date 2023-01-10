@@ -130,16 +130,13 @@ body {
   background-color: #fffafa; }
 
 h1 {
-  font-size: 4rem;
-  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.6); }
+  font-size: 4rem; }
 
 h2 {
-  font-size: 3rem;
-  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.6); }
+  font-size: 2.5rem; }
 
 h3 {
-  font-size: 2rem;
-  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.6); }
+  font-size: 2rem; }
 
 button {
   background-color: #e24548;
@@ -150,18 +147,17 @@ button {
   border: 1px solid red; }
 
 header {
-  height: 80vh;
   position: relative;
   width: 100%; }
   header nav {
-    position: absolute;
-    top: 0;
+    position: relative;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 5rem;
     width: 100%;
-    color: #454545;
+    max-height: 1450px;
+    color: #222222;
     background-color: #fffafa; }
     header nav .logo {
       display: inline-flex;
@@ -178,7 +174,7 @@ header {
       align-items: center; }
       header nav .navLinks__li a {
         font-size: 1rem;
-        color: #454545;
+        color: #222222;
         text-decoration: none; }
     header nav .build {
       display: inline-flex;
@@ -188,114 +184,156 @@ header {
       header nav .build__btn {
         font-size: .9rem;
         width: 7rem; }
-  header .landing {
-    background-image: url("https://i.postimg.cc/TYXD6QCZ/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    height: 80vh;
+
+.landing {
+  background-image: url("https://i.postimg.cc/TYXD6QCZ/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+  width: 100%; }
+  .landing__jumbo {
     position: relative;
-    width: 100%; }
-    header .landing__jumbo {
-      position: relative;
-      height: 80vh;
-      width: 80%;
+    height: 75vh;
+    width: 80%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto; }
+    .landing__jumbo__textBox {
       flex: 1;
       display: flex;
+      text-align: left;
+      flex-direction: column;
+      align-content: center;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      color: #fffafa;
+      height: 50vh;
       margin-left: auto;
-      margin-right: auto; }
-      header .landing__jumbo__textBox {
-        flex: 1;
-        display: flex;
-        text-align: left;
-        flex-direction: column;
-        align-content: center;
+      margin-right: auto;
+      flex-basis: 40%;
+      max-width: 520px; }
+      .landing__jumbo__textBox__h2 {
+        font-size: 3.2rem;
+        padding-bottom: 20px;
+        line-height: 1.2;
+        letter-spacing: 3px;
+        font-weight: lighter; }
+      .landing__jumbo__textBox__p {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        font-weight: lighter; }
+    .landing__jumbo__form {
+      flex: 1;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      color: #fffafa;
+      background: rgba(0, 0, 0, 0.5);
+      height: 50vh;
+      margin-left: auto;
+      margin-right: auto;
+      flex-basis: 40%;
+      max-width: 500px;
+      padding: 20px; }
+      .landing__jumbo__form__summary {
+        padding: 30px; }
+        .landing__jumbo__form__summary__line {
+          display: inline-flex;
+          font-family: Arial, Helvetica, sans-serif;
+          padding-bottom: 10px; }
+          .landing__jumbo__form__summary__line i {
+            font-size: 2.0rem;
+            line-height: 1.2;
+            letter-spacing: 3px; }
+          .landing__jumbo__form__summary__line p {
+            font-size: 1.0rem;
+            line-height: 1.2;
+            letter-spacing: 3px;
+            text-align: left;
+            padding-left: 20px; }
+      .landing__jumbo__form__inputs {
+        width: 80%;
+        padding: 30px; }
+        .landing__jumbo__form__inputs__enter {
+          color: white;
+          font-family: Helvetica, Arial, sans-serif;
+          font-weight: 500;
+          font-size: 1rem;
+          border-radius: 5px;
+          line-height: 22px;
+          background-color: #fffafa;
+          transition: all 0.3s;
+          padding: 13px;
+          margin-bottom: 15px;
+          width: 100%;
+          box-sizing: border-box;
+          outline: 0; }
+        .landing__jumbo__form__inputs__submit {
+          font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+          width: 100%;
+          background: #CC6666;
+          border-radius: 5px;
+          border: 0;
+          cursor: pointer;
+          color: white;
+          font-size: 1rem;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          transition: all 0.3s;
+          margin-top: -4px; }
+
+main {
+  position: relative;
+  width: 100%; }
+  main .title {
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+    text-align: center; }
+    main .title__h2 {
+      padding-bottom: 10px; }
+    main .title__p {
+      color: #888888; }
+  main .fitness {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 80px;
+    margin-left: auto;
+    margin-right: auto; }
+    main .fitness__card {
+      flex: 1;
+      align-self: center;
+      padding: 0 20px; }
+      main .fitness__card__img {
         align-items: center;
-        justify-content: center;
-        color: #fffafa;
-        height: 50vh;
+        display: block;
+        max-width: 400px;
         margin-left: auto;
-        margin-right: auto;
-        flex-basis: 40%;
-        max-width: 520px; }
-        header .landing__jumbo__textBox__h2 {
-          font-size: 3.2rem;
-          padding-bottom: 20px;
-          line-height: 1.2;
-          letter-spacing: 3px;
-          font-weight: lighter; }
-        header .landing__jumbo__textBox__p {
-          font-size: 1.4rem;
-          letter-spacing: 1px;
-          line-height: 1.3;
-          font-weight: lighter; }
-      header .landing__jumbo__form {
-        flex: 1;
-        display: flex;
+        margin-right: auto; }
+      main .fitness__card__h3 {
+        font-size: 1.2rem;
         text-align: center;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        color: #fffafa;
-        background-color: black;
-        opacity: 50%;
-        height: 50vh;
-        margin-left: auto;
-        margin-right: auto;
-        flex-basis: 40%;
-        max-width: 520px; }
-        header .landing__jumbo__form__summary {
-          padding: 30px; }
-          header .landing__jumbo__form__summary__line {
-            display: inline-flex;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-bottom: 10px; }
-            header .landing__jumbo__form__summary__line i {
-              font-size: 2.0rem;
-              line-height: 1.2;
-              letter-spacing: 3px; }
-            header .landing__jumbo__form__summary__line p {
-              font-size: 1.0rem;
-              line-height: 1.2;
-              letter-spacing: 3px;
-              text-align: left;
-              padding-left: 20px; }
-        header .landing__jumbo__form__inputs {
-          width: 80%;
-          padding: 30px; }
-          header .landing__jumbo__form__inputs__enter {
-            color: white;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 500;
-            font-size: 1rem;
-            border-radius: 5px;
-            line-height: 22px;
-            background-color: #fffafa;
-            transition: all 0.3s;
-            padding: 13px;
-            margin-bottom: 15px;
-            width: 100%;
-            box-sizing: border-box;
-            outline: 0; }
-          header .landing__jumbo__form__inputs__submit {
-            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-            width: 100%;
-            background: #CC6666;
-            border-radius: 5px;
-            border: 0;
-            cursor: pointer;
-            color: white;
-            font-size: 1rem;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            transition: all 0.3s;
-            margin-top: -4px; }
+        padding: 20px 0; }
+      main .fitness__card__p {
+        font-size: .9rem;
+        color: #888888;
+        line-height: 1.5;
+        text-align: center; }
 
 footer {
-  background-color: #454545;
+  background-color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,7 +361,7 @@ footer {
       width: 200px; }
       footer nav .navLinks__li a {
         font-size: 1rem;
-        color: #c6c6c6;
+        color: #888888;
         text-decoration: none; }
     footer nav .copy {
       display: inline-flex;
@@ -332,7 +370,7 @@ footer {
       justify-content: space-around; }
       footer nav .copy__txt {
         font-size: .7rem;
-        color: #c6c6c6; }
+        color: #888888; }
     footer nav .logo {
       display: inline-flex;
       flex-direction: row;
