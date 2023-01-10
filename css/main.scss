@@ -240,20 +240,22 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    // height: 80vh;
     position: relative;
     width: 100%;
-
+    
     &__jumbo {
         position: relative;
-        height: 75vh;
+        min-height: 800px;
         width: 80%;
         flex: 1;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 40px;
 
         &__textBox {
             flex: 1;
@@ -269,9 +271,11 @@ header {
             margin-right: auto;
             flex-basis: 40%;
             max-width: 520px;
+            padding: 40px;
 
             &__h2 {
                 font-size: 3.2rem;
+                
                 padding-bottom: 20px;
                 line-height: 1.2;
                 letter-spacing: 3px;
@@ -282,7 +286,8 @@ header {
                 font-size: 1.4rem;
                 letter-spacing: 1px;
                 line-height: 1.3;
-                font-weight: lighter
+                font-weight: lighter;
+                padding: 10px 10px 20px 10px;
             }
 
         }
@@ -297,15 +302,15 @@ header {
             justify-content: center;
             color: $offWhite;
             background: $opacityBlack;
-            height: 50vh;
+            min-height: 400px;
             margin-left: auto;
             margin-right: auto;
             flex-basis: 40%;
             max-width: 500px;
-            padding: 20px;
+            padding: 40px;
 
             &__summary {
-                padding: 30px;
+                padding-bottom: 0px;
 
                 &__line {
                     display: inline-flex;
@@ -324,6 +329,7 @@ header {
                         letter-spacing: 3px;
                         text-align: left;
                         padding-left: 20px;
+                        
                     }
                 }
             }
@@ -407,17 +413,23 @@ main {
                 margin-left: auto;
                 margin-right: auto;
             }
-            &__h3 {
-                font-size: 1.2rem;
-                text-align: center;
-                padding: 20px 0;
+            &__text {
+                padding: 20px 10px;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                &__h3 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                &__p {
+                    font-size: .9rem;
+                    color: $lightGrey;
+                    line-height: 1.5;
+                    text-align: center;
+                }
             }
-            &__p {
-                font-size: .9rem;
-                color: $lightGrey;
-                line-height: 1.5;
-                text-align: center;
-            }
+            
         }
     }
 }
