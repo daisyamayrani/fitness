@@ -5,217 +5,225 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;700&family=Yeseva+One&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&display=swap"
     rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/925434234c.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img class="logo__icon" src="./img/logo.png" />
-      </div>
-
-      <ul class="navLinks">
-        <li class="navLinks__li"><a href="#">Home</a></li>
-        <li class="navLinks__li"><a href="#">About</a></li>
-        <li class="navLinks__li"><a href="#">Trainer</a></li>
-        <li class="navLinks__li"><a href="#">Plans</a></li>
-        <li class="navLinks__li"><a href="#">FAQ</a></li>
-        <li class="navLinks__li"><a href="#">Pages</a></li>
-      </ul>
-
-      <div class="build">
-        <button class="build__btn">Build Yours</button>
-      </div>
-    </nav>
-
-
-  </header>
-
-  <section class="landing">
-    <div class="landing__jumbo">
-      <div class="landing__jumbo__textBox">
-        <h2 class="landing__jumbo__textBox__h2 item">Start off the new year on the right foot.</h3>
-          <p class="landing__jumbo__textBox__p item">Studies have shown that those who participate in group fitness
-            are more dedicated and get better results.</p>
-      </div>
-      <div class="landing__jumbo__form">
-
-        <ul class="landing__jumbo__form__summary">
-          <li class="landing__jumbo__form__summary__line">
-            <i class="fa fa-bag-shopping"></i>
-            <p class="landing__jumbo__form__p item">
-              Sign-up on our weekly plan to receive a complimentary Nike sports bag.</p>
-          </li>
-          <li class="landing__jumbo__form__summary__line">
-            <i class="fa fa-utensils"></i>
-            <p class="landing__jumbo__form__p item">Each new recruit gets exclusive access to our library of
-              personalised meal plans.
-            </p>
-          </li>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logo__icon" src="./img/logo.png" />
+        </div>
+        <ul class="navLinks">
+          <li class="navLinks__li"><a href="#">Home</a></li>
+          <li class="navLinks__li"><a href="#">About</a></li>
+          <li class="navLinks__li"><a href="#">Trainer</a></li>
+          <li class="navLinks__li"><a href="#">Plans</a></li>
+          <li class="navLinks__li"><a href="#">FAQ</a></li>
+          <li class="navLinks__li"><a href="#">Pages</a></li>
         </ul>
-        <form class="landing__jumbo__form__inputs" action="/action_page.php">
-          <input class="landing__jumbo__form__inputs__enter" type="text" id="fname" name="fname" placeholder="Your Name"
-            value=""><br>
-          <input class="landing__jumbo__form__inputs__enter" type="email" id="email" name="email"
-            placeholder="Email Address"><br>
-          <input class="landing__jumbo__form__inputs__submit" type="submit" value="Join the Club">
-        </form>
+
+        <div class="build">
+          <button class="build__btn">Build Yours</button>
+        </div>
+      </nav>
+
+
+    </header>
+
+    <section class="landing">
+      <div class="landing__jumbo">
+        <div class="landing__jumbo__textBox">
+          <h2 class="landing__jumbo__textBox__h2 item">Start off the new year on the right foot.</h3>
+            <p class="landing__jumbo__textBox__p item">Studies have shown that those who participate in group fitness
+              are more dedicated and get better results.</p>
+        </div>
+        <div class="landing__jumbo__form">
+
+          <ul class="landing__jumbo__form__summary">
+            <li class="landing__jumbo__form__summary__line">
+              <i class="fa fa-bag-shopping"></i>
+              <p class="landing__jumbo__form__p item">
+                Sign-up on our weekly plan to receive a complimentary Nike sports bag.</p>
+            </li>
+            <li class="landing__jumbo__form__summary__line">
+              <i class="fa-solid fa-spoon"></i>
+              <p class="landing__jumbo__form__p item">Each new recruit gets exclusive access to our library of
+                personalised meal plans.
+              </p>
+            </li>
+          </ul>
+          <form class="landing__jumbo__form__inputs" action="/action_page.php">
+            <input class="landing__jumbo__form__inputs__enter" type="text" id="fname" name="fname"
+              placeholder="Your Name" value=""><br>
+            <input class="landing__jumbo__form__inputs__enter" type="email" id="email" name="email"
+              placeholder="Email Address"><br>
+            <input class="landing__jumbo__form__inputs__submit" type="submit" value="Join the club">
+            <p class="landing__jumbo__form__inputs__fineprint">* We don’t share your personal info with anyone. Check
+              out our Privacy Policy for more information.</p>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
-
-
-  <main>
-    <section class="title">
-      <h2 class="title__h2">
-        Inclusive and affordable group fitness for everyone.
-      </h2>
-      <p class="title__p">
-        Our trainers empower members of all shapes and sizes to become healthier, happier and more confident.
-      </p>
     </section>
 
-    <section class="fitness">
-      <div class="fitness__card">
-        <img class="fitness__card__img" src="./img/strength.jpeg" alt="">
-        <div class="fitness__card__text">
-          <h3 class="fitness__card__text__h3">Strength Training
-          </h3>
-          <p class="fitness__card__text__p">Build muscle and bone density with us by combining a range of weight bearing
-            exercises. Our trainers will teach you perfect form.
-          </p>
-        </div>
 
-      </div>
-      <div class="fitness__card">
-        <img class="fitness__card__img" src="./img/cardio.jpeg" alt="">
-        <div class="fitness__card__text">
-          <h3 class="fitness__card__text__h3">Cardio & Intervals
-          </h3>
-          <p class="fitness__card__text__p">Lose fat and tone up by keeping your metabolism at peak rate for longer. The
-            Launchfit team will push you hard to reach your goals.
-          </p>
-        </div>
-
-      </div>
-      <div class="fitness__card">
-        <img class="fitness__card__img" src="./img/balance.jpeg" alt="">
-        <div class="fitness__card__text">
-          <h3 class="fitness__card__text__h3">Balance & Flexibility
-          </h3>
-          <p class="fitness__card__text__p">Quiet the mind and stretch the muscles with our diverse program of Yoga and
-            Pilates. Our staff are fully trained in both and ready to help you.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-    <section class="fanatics">
-      <div class="fanatics__imgBox">
-        <img class="fanatics__imgBox__img" src="./img/stretch.jpeg" alt="">
-      </div>
-      <div class="fanatics__text">
-        <h2 class="fanatics__text__h2">See our fitness fanatics
-          in full flight.</h2>
-        <p class="fanatics__text__p">Drawing on the latest in sports science and fitness coaching, our training sessions
-          incorporate a balanced range of activities ensuring use of all muscle groups in a safe and sustainable way.
+    <main>
+      <section class="title">
+        <h2 class="title__h2">
+          Inclusive and affordable group fitness for everyone.
+        </h2>
+        <p class="title__p">
+          Our trainers empower members of all shapes and sizes to become healthier, happier and more confident.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section class="affordable">
-      <div class="affordable__textBox">
-        <div class="affordable__textBox__heading">
-          <h1 class="affordable__textBox__heading__h1">Affordable Fitness - No Excuses.</h1>
-        </div>
-        <div class="affordable__textBox__boxes">
-          <div class="affordable__textBox__boxes__box box1">
-            <h3 class="affordable__textBox__boxes__box__title">CASUAL PASS</h3>
-            <div class="affordable__textBox__boxes__box__price">
-              <span class="sign">$</span>
-              <span class="number">15</span>
-              <span class="term">/ea</span>
-            </div>
-            <h2 class="affordable__textBox__boxes__box__free">Try 3 Sessions Free!</h2>
-            <h3 class="affordable__textBox__boxes__box__details">
-              Attend any daily group session
+      <section class="fitness">
+        <div class="fitness__card">
+          <img class="fitness__card__img" src="./img/strength.jpeg" alt="">
+          <div class="fitness__card__text">
+            <h3 class="fitness__card__text__h3">Strength Training
             </h3>
-            <h3 class="affordable__textBox__boxes__box__details">
-              No booking required
-            </h3>
-            <h3 class="affordable__textBox__boxes__box__details">
-              Caters to all fitness levels
-            </h3>
+            <p class="fitness__card__text__p">Build muscle and bone density with us by combining a range of weight
+              bearing
+              exercises. Our trainers will teach you perfect form.
+            </p>
           </div>
 
-          <div class="affordable__textBox__boxes__box box2">
-            <h3 class="affordable__textBox__boxes__box__title">LAUNCHFIT CLUB</h3>
-            <div class="affordable__textBox__boxes__box__price">
-              <span class="sign">$</span>
-              <span class="number">89</span>
-              <span class="term">/mo</span>
-            </div>
-            <h2 class="affordable__textBox__boxes__box__free">Free Bag + Meal Plans</h2>
-            <h3 class="affordable__textBox__boxes__box__details">
-              Exclusive weekly PT sessions
+        </div>
+        <div class="fitness__card">
+          <img class="fitness__card__img" src="./img/cardio.jpeg" alt="">
+          <div class="fitness__card__text">
+            <h3 class="fitness__card__text__h3">Cardio & Intervals
             </h3>
-            <h3 class="affordable__textBox__boxes__box__details">
-              Group capped at 15 members
+            <p class="fitness__card__text__p">Lose fat and tone up by keeping your metabolism at peak rate for longer.
+              The
+              Launchfit team will push you hard to reach your goals.
+            </p>
+          </div>
+
+        </div>
+        <div class="fitness__card">
+          <img class="fitness__card__img" src="./img/balance.jpeg" alt="">
+          <div class="fitness__card__text">
+            <h3 class="fitness__card__text__h3">Balance & Flexibility
             </h3>
-            <h3 class="affordable__textBox__boxes__box__details">
-              Tailored training programs
-            </h3>
+            <p class="fitness__card__text__p">Quiet the mind and stretch the muscles with our diverse program of Yoga
+              and
+              Pilates. Our staff are fully trained in both and ready to help you.
+            </p>
           </div>
 
         </div>
 
+      </section>
 
-
-        <div class="affordable__textBox__fineprint">
-          <p class="affordable__textBox__fineprint__p">Need additional pricing info? Get in touch for custom and
-            corporate group training pricing.</p>
+      <section class="fanatics">
+        <div class="fanatics__imgBox">
+          <img class="fanatics__imgBox__img" src="./img/stretch.jpeg" alt="">
         </div>
-      </div>
-    </section>
+        <div class="fanatics__text">
+          <h2 class="fanatics__text__h2">See our fitness fanatics
+            in full flight.</h2>
+          <p class="fanatics__text__p">Drawing on the latest in sports science and fitness coaching, our training
+            sessions
+            incorporate a balanced range of activities ensuring use of all muscle groups in a safe and sustainable way.
+          </p>
+        </div>
+      </section>
+
+      <section class="affordable">
+        <div class="affordable__textBox">
+          <div class="affordable__textBox__heading">
+            <h1 class="affordable__textBox__heading__h1">Affordable Fitness - No Excuses.</h1>
+          </div>
+          <div class="affordable__textBox__boxes">
+            <div class="affordable__textBox__boxes__box box1">
+              <h3 class="affordable__textBox__boxes__box__title">CASUAL PASS</h3>
+              <div class="affordable__textBox__boxes__box__price">
+                <span class="sign">$</span>
+                <span class="number">15</span>
+                <span class="term">/ea</span>
+              </div>
+              <h2 class="affordable__textBox__boxes__box__free">Try 3 Sessions Free!</h2>
+              <h3 class="affordable__textBox__boxes__box__details">
+                Attend any daily group session
+              </h3>
+              <h3 class="affordable__textBox__boxes__box__details">
+                No booking required
+              </h3>
+              <h3 class="affordable__textBox__boxes__box__details">
+                Caters to all fitness levels
+              </h3>
+            </div>
+
+            <div class="affordable__textBox__boxes__box box2">
+              <h3 class="affordable__textBox__boxes__box__title">LAUNCHFIT CLUB</h3>
+              <div class="affordable__textBox__boxes__box__price">
+                <span class="sign">$</span>
+                <span class="number">89</span>
+                <span class="term">/mo</span>
+              </div>
+              <h2 class="affordable__textBox__boxes__box__free">Free Bag + Meal Plans</h2>
+              <h3 class="affordable__textBox__boxes__box__details">
+                Exclusive weekly PT sessions
+              </h3>
+              <h3 class="affordable__textBox__boxes__box__details">
+                Group capped at 15 members
+              </h3>
+              <h3 class="affordable__textBox__boxes__box__details">
+                Tailored training programs
+              </h3>
+            </div>
+
+          </div>
 
 
 
-  </main>
+          <div class="affordable__textBox__fineprint">
+            <p class="affordable__textBox__fineprint__p">Need additional pricing info? Get in touch for custom and
+              corporate group training pricing.</p>
+          </div>
+        </div>
+      </section>
 
 
 
+    </main>
 
 
+    <footer>
+      <nav>
+        <ul class="navLinks" id="navLinks">
+          <li class="navLinks__li"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li class="navLinks__li"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="navLinks__li"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li class="navLinks__li"><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+        </ul>
 
+        <div class="copy">
+          <p class="copy__txt">© Copyright 2015 Medium Rare - All Rights Reserved</p>
+        </div>
 
-  <footer>
-    <nav>
-      <ul class="navLinks">
-        <li class="navLinks__li"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li class="navLinks__li"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        <li class="navLinks__li"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-        <li class="navLinks__li"><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
-      </ul>
+        <div class="logo">
+          <img class="logo__icon" src="./img/logo.png" />
+        </div>
+      </nav>
+    </footer>
 
-      <div class="copy">
-        <p class="copy__txt">© Copyright 2015 Medium Rare - All Rights Reserved</p>
-      </div>
+  </div>
 
-      <div class="logo">
-        <img class="logo__icon" src="./img/logo.png" />
-      </div>
-    </nav>
-  </footer>
-
+  <script src="script.js"></script>
 
 </body>
 

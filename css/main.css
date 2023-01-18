@@ -127,20 +127,27 @@ body {
   font-size: 16px;
   width: 100%;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #fffafa; }
+  background-color: #eeeeee; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h2 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 300; }
 
 p {
-  font-size: .9rem;
-  line-height: 1.5; }
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: .6px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100; }
 
 button {
   background-color: #e24548;
@@ -150,41 +157,57 @@ button {
   border-radius: 130px;
   border: 1px solid red; }
 
+body {
+  width: 100%;
+  background-color: #eeeeee; }
+  body .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative; }
+
 header {
-  position: relative;
-  width: 100%; }
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  z-index: 3; }
   header nav {
-    position: relative;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    min-height: 5rem;
     width: 100%;
-    max-height: 1450px;
+    margin-left: auto;
+    margin-right: auto;
     color: #222222;
-    background-color: #fffafa; }
+    background-color: #fffafa;
+    padding-top: 10px;
+    padding-bottom: 10px; }
     header nav .logo {
+      flex: 1;
       display: inline-flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center; }
       header nav .logo__icon {
-        font-size: 3rem;
         width: 100px; }
     header nav .navLinks {
+      padding: 10px 10px;
+      flex: 1;
       display: inline-flex;
       flex-direction: row;
+      gap: 10px;
       justify-content: space-around;
       align-items: center; }
       header nav .navLinks__li a {
         font-size: 1rem;
-        color: #222222;
+        color: #898989;
         text-decoration: none; }
     header nav .build {
+      flex: 1;
       display: inline-flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: space-around; }
+      justify-content: space-around;
+      align-items: center; }
       header nav .build__btn {
         font-size: .9rem;
         width: 7rem; }
@@ -196,10 +219,11 @@ header {
   z-index: -1;
   position: relative;
   width: 100%;
-  min-height: 600px; }
+  min-height: 600px;
+  padding-top: 5rem; }
   .landing__jumbo {
     position: relative;
-    min-height: 600px;
+    min-height: 700px;
     height: auto;
     width: 80%;
     flex: 1;
@@ -210,7 +234,8 @@ header {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 40px; }
+    padding-bottom: 80px;
+    padding-top: 80px; }
     .landing__jumbo__textBox {
       flex: 1;
       display: flex;
@@ -223,19 +248,20 @@ header {
       height: 50vh;
       margin-left: auto;
       margin-right: auto;
-      flex-basis: 40%;
-      max-width: 520px;
-      padding: 40px;
+      flex-basis: 60%;
+      max-width: 550px;
+      padding: 40px 10px;
       height: auto; }
       .landing__jumbo__textBox__h2 {
+        font-size: 3.2rem;
         padding-bottom: 20px;
-        line-height: 1.2;
-        letter-spacing: 3px;
+        line-height: 1.4;
+        letter-spacing: 2px;
         font-weight: lighter; }
       .landing__jumbo__textBox__p {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        line-height: 1.3;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        line-height: 1.9;
         font-weight: lighter;
         padding: 10px 10px 20px 10px; }
     .landing__jumbo__form {
@@ -248,30 +274,33 @@ header {
       justify-content: center;
       color: #fffafa;
       background: rgba(0, 0, 0, 0.5);
-      min-height: 400px;
-      max-width: 500px;
+      min-height: 468px;
+      max-width: 458px;
       margin-left: auto;
       margin-right: auto;
-      flex-basis: 40%;
+      flex-basis: 60%;
       padding: 40px; }
       .landing__jumbo__form__summary {
         padding-bottom: 0px; }
         .landing__jumbo__form__summary__line {
           display: inline-flex;
-          font-family: Arial, Helvetica, sans-serif;
-          padding-bottom: 10px; }
+          padding-bottom: 20px;
+          padding-top: 20px; }
           .landing__jumbo__form__summary__line i {
-            font-size: 2.0rem;
-            line-height: 1.2;
-            letter-spacing: 3px; }
-          .landing__jumbo__form__summary__line p {
-            font-size: 1.0rem;
+            font-size: 2.9rem;
             line-height: 1.2;
             letter-spacing: 3px;
+            font-family: 'FontAwesome' !important;
+            width: 15%; }
+          .landing__jumbo__form__summary__line p {
+            font-size: 1.2rem;
+            line-height: 1.5;
             text-align: left;
-            padding-left: 20px; }
+            padding-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 85%; }
       .landing__jumbo__form__inputs {
-        width: 80%;
+        width: 100%;
         padding: 30px; }
         .landing__jumbo__form__inputs__enter {
           color: #fffafa;
@@ -282,7 +311,7 @@ header {
           line-height: 22px;
           background-color: #fffafa;
           transition: all 0.3s;
-          padding: 13px;
+          padding: 20px;
           margin-bottom: 15px;
           width: 100%;
           box-sizing: border-box;
@@ -295,78 +324,89 @@ header {
           border: 0;
           cursor: pointer;
           color: #fffafa;
-          font-size: 1rem;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          font-size: 1.2rem;
+          padding-top: 19px;
+          padding-bottom: 19px;
           transition: all 0.3s;
-          margin-top: -4px; }
+          margin-top: 3px; }
+        .landing__jumbo__form__inputs__fineprint {
+          text-align: left;
+          font-size: .8rem;
+          font-weight: 200;
+          padding-top: 15px;
+          padding-bottom: 15px; }
 
 main {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  background-color: #fffafa; }
   main .title {
     align-items: center;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 60px 0;
-    text-align: center; }
+    text-align: center;
+    font-weight: 350;
+    background-color: #fffafa; }
     main .title__h2 {
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
     main .title__p {
-      color: #888888; }
+      color: #898989; }
   main .fitness {
-    width: 95%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    row-gap: 80px;
+    row-gap: 10px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 35px; }
+    padding-bottom: 70px;
+    justify-content: space-between;
+    background-color: #fffafa; }
     main .fitness__card {
       flex: 1;
-      align-self: center;
-      padding: 0 10px; }
+      align-self: center; }
       main .fitness__card__img {
         align-items: center;
         display: block;
-        max-width: 350px;
+        width: 360px;
         margin-left: auto;
         margin-right: auto; }
       main .fitness__card__text {
         padding: 20px 10px;
-        max-width: 350px;
+        width: 360px;
         margin-left: auto;
         margin-right: auto;
         text-align: center; }
         main .fitness__card__text__h3 {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           text-align: center;
-          padding-bottom: 15px; }
+          padding-bottom: 20px;
+          padding-top: 16px; }
         main .fitness__card__text__p {
-          font-size: .9rem;
-          color: #888888;
+          font-size: 1.0rem;
+          color: #898989;
           line-height: 1.5;
           text-align: center; }
   main .fanatics {
-    width: 95%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    row-gap: 30px;
+    row-gap: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 35px;
-    padding-bottom: 70px; }
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: #fffafa; }
     main .fanatics__imgBox {
       flex: 1;
       align-self: center;
       padding: 0 10px;
-      max-width: 500px;
-      min-width: 300px;
-      flex-basis: 40%; }
+      max-width: 700px;
+      min-width: 400px; }
       main .fanatics__imgBox__img {
         align-items: center;
         display: block;
@@ -377,26 +417,29 @@ main {
     main .fanatics__text {
       flex: 1;
       align-self: center;
-      padding: 20px 10px;
-      max-width: 500px;
-      min-width: 300px;
-      flex-basis: 40%;
+      padding: 20px 25px;
+      max-width: 600px;
+      min-width: 400px;
       text-align: center; }
       main .fanatics__text__h2 {
+        font-size: 3.1rem;
+        font-weight: 350;
+        line-height: 1.3;
         text-align: left;
-        padding-bottom: 4px;
+        padding-bottom: 35px;
         margin-left: auto;
         margin-right: auto; }
       main .fanatics__text__p {
-        color: #888888;
+        color: #898989;
         text-align: left;
+        font-size: 1.3rem;
+        line-height: 1.5;
         margin-left: auto;
         margin-right: auto; }
   main .affordable {
-    background-image: url("https://i.postimg.cc/Y9Hn90Mv/shoes.jpg");
+    background-image: url("https://i.postimg.cc/Y9Hn90Mv/shoes.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
     position: relative;
     width: 100%;
     min-height: 600px; }
@@ -475,7 +518,7 @@ footer {
     height: 5rem;
     width: 100%;
     background-color: #fffafa;
-    padding: 5px; }
+    padding: 5px 0; }
     footer nav .navLinks {
       display: inline-flex;
       flex-direction: row;
@@ -486,7 +529,7 @@ footer {
       width: 200px; }
       footer nav .navLinks__li a {
         font-size: 1rem;
-        color: #888888;
+        color: #898989;
         text-decoration: none; }
     footer nav .copy {
       display: inline-flex;
@@ -495,7 +538,7 @@ footer {
       justify-content: space-around; }
       footer nav .copy__txt {
         font-size: .7rem;
-        color: #888888; }
+        color: #898989; }
     footer nav .logo {
       display: inline-flex;
       flex-direction: row;
@@ -505,6 +548,8 @@ footer {
         font-size: 3rem;
         width: 100px; }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */ }
 /* For desktop: */
 
 /*# sourceMappingURL=main.css.map */
