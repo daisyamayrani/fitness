@@ -126,9 +126,9 @@ table {
 body {
   font-size: 16px;
   width: 100%;
-  font-family: Helvetica, Arial, sans-serif;
   background-color: #eeeeee;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1 {
   font-size: 4rem;
@@ -285,7 +285,6 @@ nav {
             line-height: 1.5;
             text-align: left;
             padding-left: 20px;
-            font-family: Arial, Helvetica, sans-serif;
             width: 85%; }
       .landing__jumbo__form__inputs {
         width: 100%;
